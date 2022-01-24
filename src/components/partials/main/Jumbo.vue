@@ -5,7 +5,11 @@
                 <div class="row m-0 align-items-center">
                     <div class="col-7 p-0">
                         <h3 class="h3-certified">Certified fitness professional</h3>
-                        <h1 class="h1-title"> <span class="yellow-spacer">Ta</span>ke control of your health</h1>
+                        <!-- <h1 class="h1-title"> <span class="yellow-spacer">Ta</span>ke control of your health</h1> -->
+                        <h1 class="h1-title"> Take control of your health</h1>
+                        <svg class="vector-waves" width="352" height="61" viewBox="0 0 352 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 51.5215L45 12.5215C48.6667 8.35485 58 2.52152 67.5 12.5215C77 22.5215 97 42.6882 108 51.5215C110.833 53.1882 117.5 55.5215 121.5 51.5215C125.5 47.5215 150.167 23.8549 162 12.5215C165.5 8.35485 175.3 2.52152 186.5 12.5215C197.7 22.5215 216.167 42.6882 224 51.5215C227 53.6882 234.5 56.7215 240.5 51.5215C246.5 46.3215 269.333 23.3549 280 12.5215C283 8.85485 291.9 3.72152 303.5 12.5215C315.1 21.3215 338.667 44.6882 347 54.0215" stroke="#FFF941" stroke-width="13"/>
+                        </svg>
                         <p class="p-curabitur mb-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
                         <a href="#" class="yt-jumbo text-decoration-none rounded-pill"> <i class="fab fa-youtube"></i> Visit my YouTube channel </a> <a href="#" class="buy-jumbo text-decoration-none rounded-pill">Buy Avada today <i class="fas fa-arrow-right"></i> </a>
                     </div>
@@ -41,6 +45,7 @@
 
 <style lang="scss" scoped>
     @import '../../../assets/scss/partials/_variables.scss';
+
     .jumbo-container-photo {
         background-image: url('../../../assets/img/slider82x-scaled.jpg');
         background-size: cover;
@@ -69,13 +74,18 @@
                         .h1-title {
                             color: white;
                             font-size: 4.5em;
-                            margin-bottom: 0.7em;
+                            margin-bottom: 0.5em;
 
                             .yellow-spacer {
                                 border-bottom: 5px solid #F1EC3E;
                                 border-radius: 5px;
                                 padding-bottom: 0.3em
                             }
+                        }
+                        .vector-waves {
+                            width: 80px;
+                            height: auto;
+                            margin-bottom: 1.3em
                         }
                         .p-curabitur {
                             color: #93939f;

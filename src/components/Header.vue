@@ -22,7 +22,8 @@
 </script>
 
 <style lang="scss" scoped>
- @import '../assets/scss/style.scss';
+    @import '../assets/scss/style.scss';
+    
     header {
         background-color: $codGray;
         height: 100px;

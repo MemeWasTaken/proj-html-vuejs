@@ -24,6 +24,7 @@
 
 <style lang="scss" scoped>
     @import '../../../assets/scss/partials/_variables.scss';
+    
     .new {
         background-color: #FFF941;
         color: #000000;
