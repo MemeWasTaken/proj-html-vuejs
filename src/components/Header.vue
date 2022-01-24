@@ -28,7 +28,7 @@
         height: 100px;
 
         .container-xxl {
-            border: 2px solid red;
+            // border: 2px solid red;
             height: 100px;
         }
     }

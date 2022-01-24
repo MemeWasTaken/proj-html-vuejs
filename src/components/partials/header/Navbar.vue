@@ -9,7 +9,7 @@
                 <a href="#" class="nav-link fs-5 disabled me-3">Blog</a>
                 <a href="#" class="nav-link fs-5 disabled me-3">Store <span class="new ms-1 ps-2 pe-2">new</span> </a> 
                 <a href="#" class="nav-link btn-nav rounded-pill text-decoration-none ps-4 pe-4">Schedule a workout</a>
-                <a href="#" class="nav-link btn-nav kart text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="nav-link btn-nav cart text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
                 <a href="#" class="nav-link btn-nav search text-decoration-none"><i class="fas fa-search"></i></a>
             </div>
         </div>
@@ -51,7 +51,6 @@
         margin-right: 2em;
         font-size: 0.85em;
         color: #ffffff;
-
     }
     .btn-nav.search {
         margin-left: 1.2em;
