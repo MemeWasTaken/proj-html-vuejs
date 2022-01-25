@@ -4,6 +4,7 @@
         <SectionChallenge />
         <SectionTraining />
         <SectionSecondJumbo />
+        <SectionServicesCards />
     </main>
 </template>
 
@@ -12,6 +13,7 @@
     import SectionChallenge from './partials/main/SectionChallenge.vue'
     import SectionTraining from './partials/main/SectionTraining.vue'
     import SectionSecondJumbo from './partials/main/SectionSecondJumbo.vue'
+    import SectionServicesCards from './partials/main/SectionServicesCards.vue'
 
     export default {
         name: "Main",
@@ -20,6 +22,7 @@
             SectionChallenge,
             SectionTraining,
             SectionSecondJumbo,
+            SectionServicesCards,
         }
     }
 </script>

@@ -32,7 +32,7 @@
         <div class="container-xxl d-flex flex-column justify-content-end p-0 pb-3">
             <div class="row m-0 pb-5">
                 <div class="col p-0 d-flex">
-                    <h3>Featured playlist</h3>
+                    <h3>Featured playlists</h3>
                 </div>
                 <div class="col p-0">
                     <h5 class="text-end">View all videos <i class="fas fa-angle-right"></i> </h5>
