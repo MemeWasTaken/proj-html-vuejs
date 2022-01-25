@@ -47,7 +47,7 @@
         <div class="row m-0">
             <div class="col">
                 <div class="brad-j d-flex align-items-center">
-                    <img class="img-brad rounded-circle" src="https://avada.theme-fusion.com/fitness/wp-content/uploads/sites/130/2020/03/avatar-1@2x.jpg" alt="">
+                    <img class="img-brad rounded-circle" src="../../../assets/img/avatar-1-2x.jpg" alt="">
                     <h5 class="name-brad"> Brad Johnson </h5>
                     <h5 class="city-brad"> Las Vegas </h5>
                 </div>
