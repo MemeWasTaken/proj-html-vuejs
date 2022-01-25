@@ -5,6 +5,7 @@
         <SectionTraining />
         <SectionSecondJumbo />
         <SectionServicesCards />
+        <SectionLatestArticles />
     </main>
 </template>
 
@@ -14,6 +15,7 @@
     import SectionTraining from './partials/main/SectionTraining.vue'
     import SectionSecondJumbo from './partials/main/SectionSecondJumbo.vue'
     import SectionServicesCards from './partials/main/SectionServicesCards.vue'
+    import SectionLatestArticles from './partials/main/SectionLatestArticles.vue'
 
     export default {
         name: "Main",
@@ -23,6 +25,7 @@
             SectionTraining,
             SectionSecondJumbo,
             SectionServicesCards,
+            SectionLatestArticles,
         }
     }
 </script>
