@@ -58,7 +58,7 @@
 
         .container-xxl {
             // height: 713px;
-            padding: 5.5em 0;
+            padding: 5.5em 0 4em 0;
 
             .row {
                 .article-card {
