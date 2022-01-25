@@ -7,6 +7,7 @@
         <SectionServicesCards />
         <SectionLatestArticles />
         <SectionBanner />
+        <SectionPartners />
     </main>
 </template>
 
@@ -18,6 +19,7 @@
     import SectionServicesCards from './partials/main/SectionServicesCards.vue'
     import SectionLatestArticles from './partials/main/SectionLatestArticles.vue'
     import SectionBanner from './partials/main/SectionBanner.vue'
+    import SectionPartners from './partials/main/SectionPartners.vue'
 
     export default {
         name: "Main",
@@ -29,6 +31,7 @@
             SectionServicesCards,
             SectionLatestArticles,
             SectionBanner,
+            SectionPartners,
         }
     }
 </script>
