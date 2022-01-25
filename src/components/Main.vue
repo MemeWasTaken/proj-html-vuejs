@@ -8,6 +8,7 @@
         <SectionLatestArticles />
         <SectionBanner />
         <SectionPartners />
+        <SectionOfTheDay />
     </main>
 </template>
 
@@ -20,6 +21,7 @@
     import SectionLatestArticles from './partials/main/SectionLatestArticles.vue'
     import SectionBanner from './partials/main/SectionBanner.vue'
     import SectionPartners from './partials/main/SectionPartners.vue'
+    import SectionOfTheDay from './partials/main/SectionOfTheDay.vue'
 
     export default {
         name: "Main",
@@ -32,6 +34,7 @@
             SectionLatestArticles,
             SectionBanner,
             SectionPartners,
+            SectionOfTheDay,
         }
     }
 </script>
