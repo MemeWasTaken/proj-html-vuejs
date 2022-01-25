@@ -181,10 +181,10 @@
         .container-xxl {
             height: 713px;
 
-            .row {
-                .col {}
-                .col {}
-            }
+            // .row {
+            //     .col {}
+            //     .col {}
+            // }
             .row {
                 .training-card {
                     width: 410px;
