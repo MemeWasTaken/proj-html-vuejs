@@ -1,12 +1,17 @@
 <template>
     <footer>
-
+        <UpperFooter />
     </footer>
 </template>
 
 <script>
+    import UpperFooter from './partials/footer/UpperFooter.vue'
+
     export default {
-        name: "Footer"
+        name: "Footer",
+        components: {
+            UpperFooter,
+        }
     }
 </script>
 
