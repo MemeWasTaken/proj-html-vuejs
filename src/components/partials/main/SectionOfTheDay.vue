@@ -32,10 +32,16 @@
         .play-button {
             background-color: #FFFFFF;
             color: $dodgerBlue;
+            transition: color 0.8s;
             text-align: center;
             width: 6em;
             line-height: 6em;
             height: 6em;
+
+            &:hover {
+                color: #FF414B;
+                cursor: pointer;    
+            }
 
             .fas.fa-play { font-size: 1.2em; }
         }

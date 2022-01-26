@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer id="ftr">
         <UpperFooter 
             :foot="foo"
         />

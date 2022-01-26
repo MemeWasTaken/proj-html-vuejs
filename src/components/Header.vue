@@ -1,11 +1,10 @@
 <template>
-    <header>
+    <header id="hdr">
         <div class="container-xxl d-flex justify-content-between align-items-center p-0">
             <Logo />
             <Navbar
                 :nav="navb"
             />
-
         </div>
     </header>
 </template>
@@ -33,7 +32,6 @@
         height: 100px;
 
         .container-xxl {
-            // border: 2px solid red;
             height: 100px;
         }
     }

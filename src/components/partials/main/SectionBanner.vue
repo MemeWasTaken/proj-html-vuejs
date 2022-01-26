@@ -1,5 +1,5 @@
 <template>
-    <section class="banner">
+    <section id="bnnr" class="banner">
         <div class="color-gradient d-flex flex-column justify-content-center align-items-center">
             <div class="row m-0">
                 <div class="col">
@@ -66,13 +66,15 @@
                     }
                     .buy-banner {
                             background-color: $dodgerBlue;
+                            transition: background-color 0.25s;
                             color:white;
                             font-size: 1.1em;
                             font-weight: 500;
                             padding: 0.7em 2.5em;
 
-                            &:hover {
-                                color: white;
+                            &:hover { 
+                                background-color: #FF414B; 
+                                cursor: pointer;    
                             }
                         }
                 }

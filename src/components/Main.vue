@@ -15,7 +15,9 @@
             :latarts="larts"
         />
         <SectionBanner />
-        <SectionPartners />
+        <SectionPartners 
+            :parts="pars"
+        />
         <SectionOfTheDay />
     </main>
 </template>
@@ -50,6 +52,7 @@
                 "trai": this.train, 
                 "ser": this.serv,
                 "larts": this.latarts,
+                "pars": this.parts,
             } 
         },
         props: [ 
@@ -57,6 +60,7 @@
             'train',
             'serv',
             'latarts',
+            'parts',
         ],
 
     }

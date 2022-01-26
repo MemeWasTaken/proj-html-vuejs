@@ -1,5 +1,5 @@
 <template>
-    <section class="services-cards">
+    <section id="srvs" class="services-cards">
         <div class="container-xxl  p-0">
             <div class="row d-flex justify-content-between align-items-center m-0">
 
@@ -43,10 +43,15 @@
 
                 .service-card {
                     border: 5px solid #3240C1;
+                    transition: transform 0.3s;
                     border-radius: 10px;
                     width: 405px;
                     height: 550px;
 
+                    &:hover { 
+                        transform: scale(1.04);
+                        cursor: pointer;
+                    }
                     .title {
                         color: #ffffff;
                         font-size: 1.8em;

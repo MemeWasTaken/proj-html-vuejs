@@ -9,6 +9,7 @@
                 :train="results.trainings"
                 :serv="results.services"
                 :latarts="results.latest_articles"
+                :parts="results.partners"
             />
             <Footer 
                 :foot="results.recent_posts"
@@ -44,7 +45,7 @@
                         {
                             "text_link_navigate": "Services",
                             "icon": null, 
-                            "link_navigate": "#",
+                            "link_navigate": "#srvs",
                             "isActive": false,
                             "isNew": false,
                             "isButton": false,
@@ -52,7 +53,7 @@
                         {
                             "text_link_navigate": "About",
                             "icon": null,
-                            "link_navigate": "#",
+                            "link_navigate": "#ftr",
                             "isActive": false,
                             "isNew": false,
                             "isButton": false,
@@ -60,7 +61,7 @@
                         {
                             "text_link_navigate": "Videos",
                             "icon": null,
-                            "link_navigate": "#",
+                            "link_navigate": "#vds",
                             "isActive": false,
                             "isNew": false,
                             "isButton": false,
@@ -68,7 +69,7 @@
                         {
                             "text_link_navigate": "Blog",
                             "icon": null,
-                            "link_navigate": "#",
+                            "link_navigate": "#ltsarts",
                             "isActive": false,
                             "isNew": false,
                             "isButton": false,
@@ -76,7 +77,7 @@
                         {
                             "text_link_navigate": "Store",
                             "icon": null,
-                            "link_navigate": "#",
+                            "link_navigate": "#bnnr",
                             "isActive": false,
                             "isNew": true,
                             "isButton": false,
@@ -133,6 +134,7 @@
                             "poster_challenge": "../../../assets/img/service6-2x.jpg",
                             "title_challenge": "Crossfit workout",
                             "subtitle_challenge": "Push your limits",
+                            "link_challenge": "#",
                             "id": 'a'
                         },
                         {
@@ -219,11 +221,29 @@
                     ],
                     "partners": [
                         {
-                            "logo_partner": "",
-                            "par_partner": "",
-                            "text_link_partner": "",
-                            "link_partner": "",
+                            "logo_partner": "sponsor-1-2x.png",
+                            "par_partner": "Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.",
+                            "text_link_partner": "Visit Yoga Studio",
+                            "link_partner": "#",
                         },
+                        {
+                            "logo_partner": "sponsor-2-2x.png",
+                            "par_partner": "Feugiat etiam dui mauris pharetra mauris sed pharetra. Convallis sapien ornare cras faucibus nulla porta dui a.",
+                            "text_link_partner": "Join Fitness Center",
+                            "link_partner": "#",
+                        },
+                        {
+                            "logo_partner": "sponsor-3-2x.png",
+                            "par_partner": "Nisl at quam adipiscing montes, nec, adipiscing commodo aliquam tincidunt. Ligula in habitant et sagittis imperdiet.",
+                            "text_link_partner": "Learn About Fc",
+                            "link_partner": "#",
+                        },
+                        {
+                            "logo_partner": "sponsor-4-2x.png",
+                            "par_partner": "Proin in viverra maecenas et mattis ut nibh enim. Gravida ultricies mi porta lacus. Et posuere velit sed nec eleifend.",
+                            "text_link_partner": "Visit Power Gym",
+                            "link_partner": "#",
+                        }
                     ]
 
                 }

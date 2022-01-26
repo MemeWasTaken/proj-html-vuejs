@@ -64,6 +64,7 @@
     }
     .btn-nav.rounded-pill {
         background-color: $dodgerBlue;
+        transition: background-color 0.25s;
         padding-top: 0.8em;
         padding-left: 2em !important;
         padding-right: 2em !important;
@@ -72,6 +73,8 @@
         margin-right: 2em;
         font-size: 0.85em;
         color: #ffffff;
+
+        &:hover { background-color: #FF414B; }
     }
     .btn-nav.search {
         margin-left: 1.2em;

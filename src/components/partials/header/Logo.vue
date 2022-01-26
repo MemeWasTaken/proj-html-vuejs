@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <a class="text-decoration-none" href="#">
         <img src="../../../assets/logo.png" alt="Logo della compagnia">
-    </div>
+    </a>
 </template>
 
 <script>

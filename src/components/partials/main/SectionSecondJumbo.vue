@@ -76,13 +76,15 @@
                         }
                         .yt-jumbo {
                             background-color: $dodgerBlue;
+                            transition: background-color 0.25s;
                             color:white;
                             font-size: 1.2em;
                             font-weight: 500;
                             padding: 0.7em 4em;
 
-                            &:hover {
-                                color: white;
+                            &:hover { 
+                                background-color: #FF414B; 
+                                cursor: pointer;    
                             }
                         }
                     }

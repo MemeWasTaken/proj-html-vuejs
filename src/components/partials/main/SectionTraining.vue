@@ -1,5 +1,5 @@
 <template>
-    <section class="training position-relative">
+    <section id="vds" class="training position-relative">
         <div class="girl-abs position-absolute">
             <div class="color-gradient">
                 <div class="play-button rounded-circle position-absolute">
@@ -35,7 +35,7 @@
                     <h3>Featured playlists</h3>
                 </div>
                 <div class="col p-0">
-                    <h5 class="text-end">View all videos <i class="fas fa-angle-right"></i> </h5>
+                    <h5 class="view-more text-end">View all videos <i class="fas fa-angle-right"></i> </h5>
                 </div>
             </div>
             <div class="row justify-content-between m-0 p-0 pb-5">
@@ -94,6 +94,7 @@
                 .play-button {
                     background-color: #FFFFFF;
                     color: $dodgerBlue;
+                    transition: color 0.8s;
                     text-align: center;
                     width: 6em;
                     line-height: 6em;
@@ -101,6 +102,11 @@
                     top: 50%;
                     right: 50%;
                     transform: translate(50%,-50%);
+
+                    &:hover {
+                        color: #FF414B;
+                        cursor: pointer;
+                    }
     
                     .fas.fa-play { font-size: 1.2em; }
                 }
@@ -152,6 +158,7 @@
                 .yt-btn {
                     background-color: #ff0000;
                     color: #ffffff;
+                    transition: background-color 0.3s;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -159,6 +166,10 @@
                     font-weight: 500;
                     width: 280px;
                     height: 3.2em;
+
+                    &:hover {
+                        background-color: #FF414B;
+                    }
 
                     .fab.fa-youtube {
                         padding-right: 0.5em;
@@ -170,10 +181,13 @@
         .container-xxl {
             height: 713px;
 
-            // .row {
-            //     .col {}
-            //     .col {}
-            // }
+            .view-more {
+                transition: color 0.4s;
+                &:hover {
+                    color: #4154FF;
+                    cursor: pointer;
+                }
+            }
             .row {
                 .training-card {
                     width: 410px;
@@ -189,6 +203,7 @@
                         .play-button {
                             background-color: #FFFFFF;
                             color: $dodgerBlue;
+                            transition: color 0.8s;
                             text-align: center;
                             width: 4em;
                             line-height: 4em;
@@ -196,6 +211,11 @@
                             top: 50%;
                             right: 50%;
                             transform: translate(50%,-50%);
+
+                            &:hover {
+                                color: #FF414B;
+                                cursor: pointer;    
+                            }
             
                             .fas.fa-play { 
                                 font-size: 0.7em;
