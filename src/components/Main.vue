@@ -8,7 +8,9 @@
             :train="trai"
         />
         <SectionSecondJumbo />
-        <SectionServicesCards />
+        <SectionServicesCards 
+            :serv="ser"
+        />
         <SectionLatestArticles />
         <SectionBanner />
         <SectionPartners />
@@ -44,11 +46,13 @@
             return { 
                 "chal": this.chall, 
                 "trai": this.train, 
+                "ser": this.serv
             } 
         },
         props: [ 
             'chall', 
-            'train', 
+            'train',
+            'serv', 
         ],
 
     }

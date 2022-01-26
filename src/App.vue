@@ -7,6 +7,7 @@
             <Main 
                 :chall="results.challenges"
                 :train="results.trainings"
+                :serv="results.services"
             />
             <Footer 
                 :foot="results.recent_posts"
@@ -33,6 +34,7 @@
                     "navigate": [
                         {
                             "text_link_navigate": "Home",
+                            "icon": null, 
                             "link_navigate": "#",
                             "isActive": true,
                             "isNew": false,
@@ -40,6 +42,7 @@
                         },
                         {
                             "text_link_navigate": "Services",
+                            "icon": null, 
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": false,
@@ -47,6 +50,7 @@
                         },
                         {
                             "text_link_navigate": "About",
+                            "icon": null,
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": false,
@@ -54,6 +58,7 @@
                         },
                         {
                             "text_link_navigate": "Videos",
+                            "icon": null,
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": false,
@@ -61,6 +66,7 @@
                         },
                         {
                             "text_link_navigate": "Blog",
+                            "icon": null,
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": false,
@@ -68,6 +74,7 @@
                         },
                         {
                             "text_link_navigate": "Store",
+                            "icon": null,
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": true,
@@ -75,10 +82,27 @@
                         },
                         {
                             "text_link_navigate": "Schedule a workout",
+                            "icon": null,
                             "link_navigate": "#",
                             "isActive": false,
                             "isNew": false,
                             "isButton": true,
+                        },
+                        {
+                            "text_link_navigate": null,
+                            "icon": "shopping-cart",
+                            "link_navigate": "#",
+                            "isActive": false,
+                            "isNew": false,
+                            "isButton": false,
+                        },
+                        {
+                            "text_link_navigate": null,
+                            "icon": "search",
+                            "link_navigate": "#",
+                            "isActive": false,
+                            "isNew": false,
+                            "isButton": false,
                         },
                     ],
                     "recent_posts": [
@@ -125,25 +149,51 @@
                     ],
                     "trainings": [
                         {
-                            "poster_training": '../../../assets/img/video2-2x.jpg',
-                            "title_training": 'Thighs &amp; glute workout',
-                            "caption_training": 'Increase your mobility',
-                            "id": 'a'
+                            "poster_training": "../../../assets/img/video2-2x.jpg",
+                            "title_training": "Thighs &amp; glute workout",
+                            "caption_training": "Increase your mobility",
+                            "id": "a"
                         },
                         {
-                            "poster_training": '../../../assets/img/video7-2x.jpg',
-                            "title_training": 'Lift, firm &amp; perk up',
-                            "caption_training": 'Feel young again',
-                            "id": 'b'
+                            "poster_training": "../../../assets/img/video7-2x.jpg",
+                            "title_training": "Lift, firm &amp; perk up",
+                            "caption_training": "Feel young again",
+                            "id": "b"
                         },
                         {
-                            "poster_training": '../../../assets/img/video9-2x.jpg',
-                            "title_training": 'Slim &amp; trim your waist',
-                            "caption_training": 'Shed those extra pounds',
-                            "id": 'c'
+                            "poster_training": "../../../assets/img/video9-2x.jpg",
+                            "title_training": "Slim &amp; trim your waist",
+                            "caption_training": "Shed those extra pounds",
+                            "id": "c"
                         }
                     ],
-                    
+                    "services": [
+                        {
+                            "img_service": "watch.png",
+                            "title_service": "Team training",
+                            "subtitle_service": "Find a partner",
+                            "par_service": "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehnicula. Tristique.",
+                            "text_link_service": "Find a partner",
+                            "link_service": "#",
+                        },
+                        {
+                            "img_service": "handlebar.png",
+                            "title_service": "Crossfit workout",
+                            "subtitle_service": "Push your limits",
+                            "par_service": "Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehnicula. Tristique.",
+                            "text_link_service": "Learn about crossfit",
+                            "link_service": "#",
+                        },
+                        {
+                            "img_service": "hips.png",
+                            "title_service": "Weight loss plan",
+                            "subtitle_service": "Shed those pounds",
+                            "par_service": "At laoreet sebectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam.",
+                            "text_link_service": "Schedule a workout",
+                            "link_service": "#",
+                        },
+                    ],
+
                 }
             }
         }

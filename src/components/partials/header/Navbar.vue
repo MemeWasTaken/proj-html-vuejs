@@ -8,13 +8,14 @@
                     :class="getClass(el)"
                     :href="el.link_navigate">
                     
-                    {{ el.text_link_navigate }}
+                    <span v-show="el.text_link_navigate"> {{ el.text_link_navigate }} </span>
                     <span v-show="el.isNew" class="new ms-1 ps-2 pe-2"> new </span>
-                    
-                </a>
-                <a href="#" class="nav-link btn-nav cart text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="nav-link btn-nav search text-decoration-none"><i class="fas fa-search"></i></a>
+                    <i v-show="el.icon"
+                        class="fas"
+                        :class="`fa-${el.icon}`" 
+                    ></i>
 
+                </a>
 
             </div>
     </nav>
@@ -28,8 +29,7 @@
             getClass(el) {
                 if (el.isActive == true) { return "fs-5 text-white me-3";
                 } else if (el.isButton == true) { return "btn-nav rounded-pill text-decoration-none";
-                } else if (el.isCart) { return "btn-nav cart text-decoration-none";
-                } else if (el.isSearch) { return "btn-nav search text-decoration-none"; 
+                } else if (el.icon) { return "btn-nav search text-decoration-none";
                 } else { return "fs-5 not-selected me-3"; }
 
             }
