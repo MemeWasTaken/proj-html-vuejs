@@ -6,6 +6,7 @@
             />
             <Main 
                 :chall="results.challenges"
+                :train="results.trainings"
             />
             <Footer 
                 :foot="results.recent_posts"
@@ -122,6 +123,27 @@
                             "id": 'c'
                         }
                     ],
+                    "trainings": [
+                        {
+                            "poster_training": '../../../assets/img/video2-2x.jpg',
+                            "title_training": 'Thighs &amp; glute workout',
+                            "caption_training": 'Increase your mobility',
+                            "id": 'a'
+                        },
+                        {
+                            "poster_training": '../../../assets/img/video7-2x.jpg',
+                            "title_training": 'Lift, firm &amp; perk up',
+                            "caption_training": 'Feel young again',
+                            "id": 'b'
+                        },
+                        {
+                            "poster_training": '../../../assets/img/video9-2x.jpg',
+                            "title_training": 'Slim &amp; trim your waist',
+                            "caption_training": 'Shed those extra pounds',
+                            "id": 'c'
+                        }
+                    ],
+                    
                 }
             }
         }

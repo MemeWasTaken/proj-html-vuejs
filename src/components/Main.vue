@@ -4,7 +4,9 @@
         <SectionChallenge
             :chall="chal"
         />
-        <SectionTraining />
+        <SectionTraining 
+            :train="trai"
+        />
         <SectionSecondJumbo />
         <SectionServicesCards />
         <SectionLatestArticles />
@@ -41,10 +43,12 @@
         data() { 
             return { 
                 "chal": this.chall, 
+                "trai": this.train, 
             } 
         },
         props: [ 
             'chall', 
+            'train', 
         ],
 
     }

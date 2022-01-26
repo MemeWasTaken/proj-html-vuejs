@@ -39,33 +39,21 @@
                 </div>
             </div>
             <div class="row justify-content-between m-0 p-0 pb-5">
-                <div class="training-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img a position-relative">
+                
+                <div v-for="(el, index) in train"
+                    :key="el + index"
+                    class="training-card d-flex flex-column align-items-center p-0">
+                    <div 
+                        class="container-img position-relative"
+                        :class="el.id">
                         <div class="play-button rounded-circle position-absolute">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
-                    <h4>Thighs &amp; glute workout</h4>
-                    <h5>Increase your mobility</h5>
+                    <h4>{{ el.title_training }}</h4>
+                    <h5>{{ el.caption_training }}</h5>
                 </div>
-                <div class="training-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img b position-relative">
-                        <div class="play-button rounded-circle position-absolute">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <h4>Lift, firm &amp; perk up</h4>
-                    <h5>Feel young again</h5>
-                </div>
-                <div class="training-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img c position-relative">
-                        <div class="play-button rounded-circle position-absolute">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <h4>Slim &amp; trim your waist</h4>
-                    <h5>Shed those extra pounds</h5>
-                </div>
+
             </div>
         </div>
     </section>
@@ -73,7 +61,8 @@
 
 <script>
     export default {
-        name: "SectionTraining"
+        name: "SectionTraining",
+        props: [ 'train' ],
     }
 </script>
 
