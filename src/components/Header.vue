@@ -2,7 +2,9 @@
     <header>
         <div class="container-xxl d-flex justify-content-between align-items-center p-0">
             <Logo />
-            <Navbar />
+            <Navbar
+                :nav="navb"
+            />
 
         </div>
     </header>
@@ -17,7 +19,9 @@
         components: {
             Logo,
             Navbar,
-        }
+        },
+        data() { return { "navb": this.nav } },
+        props: [ 'nav' ],
     }
 </script>
 

@@ -54,8 +54,8 @@
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
-                    <h4>Thighs &amp; glute workout</h4>
-                    <h5>Increase your mobility</h5>
+                    <h4>Lift, firm &amp; perk up</h4>
+                    <h5>Feel young again</h5>
                 </div>
                 <div class="training-card d-flex flex-column align-items-center p-0">
                     <div class="container-img c position-relative">
@@ -63,8 +63,8 @@
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
-                    <h4>Thighs &amp; glute workout</h4>
-                    <h5>Increase your mobility</h5>
+                    <h4>Slim &amp; trim your waist</h4>
+                    <h5>Shed those extra pounds</h5>
                 </div>
             </div>
         </div>
@@ -227,17 +227,3 @@
     }
 
 </style>
-
-<!-- <div class="container-xxl d-flex flex-column justify-content-end p-0">
-            <div class="row m-0">
-                <div class="col d-flex">
-                    <h3>Featured playlist</h3>
-                </div>
-                <div class="col">
-                    <h4>View all videos <i class="fas fa-angle-right"></i> </h4>
-                </div>
-            </div>
-            <div class="row">
-                
-            </div>
-    </div> -->

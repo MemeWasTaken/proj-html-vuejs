@@ -1,7 +1,9 @@
 <template>
     <main>
         <Jumbo />
-        <SectionChallenge />
+        <SectionChallenge
+            :chall="chal"
+        />
         <SectionTraining />
         <SectionSecondJumbo />
         <SectionServicesCards />
@@ -35,7 +37,16 @@
             SectionBanner,
             SectionPartners,
             SectionOfTheDay,
-        }
+        },
+        data() { 
+            return { 
+                "chal": this.chall, 
+            } 
+        },
+        props: [ 
+            'chall', 
+        ],
+
     }
 </script>
 

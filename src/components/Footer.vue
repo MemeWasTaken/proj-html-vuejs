@@ -1,6 +1,8 @@
 <template>
     <footer>
-        <UpperFooter />
+        <UpperFooter 
+            :foot="foo"
+        />
         <BottomFooter />
     </footer>
 </template>
@@ -14,7 +16,9 @@
         components: {
             UpperFooter,
             BottomFooter,
-        }
+        },
+        data () { return { "foo": this.foot, } },
+        props: [ 'foot' ],
     }
 </script>
 

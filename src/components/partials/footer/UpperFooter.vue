@@ -16,11 +16,20 @@
                 <div class="col-4 b d-flex flex-column justify-content-start align-items-center m-0 p-0">
                     <h5 class="text-uppercase">Recent Posts</h5>
                     <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center">
-                        <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> The best protein shake </a> </li>        
+
+                        <li v-for="(el, index) in foot"
+                            :key="el + index">
+
+                            <a class="text-decoration-none" :href="el.link_post">
+                                <i class="fas fa-angle-right"></i> {{ el.text_link_post }}
+                            </a>
+                        </li>
+
+                        <!-- <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> The best protein shake </a> </li>        
                         <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> Ultimate cardio workout </a> </li>        
                         <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> New juices available now </a> </li>        
                         <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> Tips to find training partners </a> </li>        
-                        <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> 20 best healthy recipes </a> </li>        
+                        <li> <a class="text-decoration-none" href="#"> <i class="fas fa-angle-right"></i> 20 best healthy recipes </a> </li>         -->
                     </ul>
                 </div>
                 <div class="col-4 c d-flex flex-column justify-content-start align-items-center m-0 p-0">
@@ -38,7 +47,8 @@
 
 <script>
     export default {
-        name: "UpperFooter"
+        name: "UpperFooter",
+        props: [ 'foot' ],
     }
 </script>
 
@@ -83,9 +93,7 @@
 
                     h5 { color: #ffffff; }
                     ul {
-
                         li {
-
                             padding: 0.8em 0 !important;
                             a {
                                 color: #ffffff;
