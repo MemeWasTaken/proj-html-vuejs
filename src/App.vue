@@ -8,6 +8,7 @@
                 :chall="results.challenges"
                 :train="results.trainings"
                 :serv="results.services"
+                :latarts="results.latest_articles"
             />
             <Footer 
                 :foot="results.recent_posts"
@@ -150,19 +151,19 @@
                     "trainings": [
                         {
                             "poster_training": "../../../assets/img/video2-2x.jpg",
-                            "title_training": "Thighs &amp; glute workout",
+                            "title_training": "Thighs & glute workout",
                             "caption_training": "Increase your mobility",
                             "id": "a"
                         },
                         {
                             "poster_training": "../../../assets/img/video7-2x.jpg",
-                            "title_training": "Lift, firm &amp; perk up",
+                            "title_training": "Lift, firm & perk up",
                             "caption_training": "Feel young again",
                             "id": "b"
                         },
                         {
                             "poster_training": "../../../assets/img/video9-2x.jpg",
-                            "title_training": "Slim &amp; trim your waist",
+                            "title_training": "Slim & trim your waist",
                             "caption_training": "Shed those extra pounds",
                             "id": "c"
                         }
@@ -193,6 +194,37 @@
                             "link_service": "#",
                         },
                     ],
+                    "latest_articles": [
+                        {
+                            "poster_article": "blog4-2x.jpg",
+                            "title_article": "The best protein shake",
+                            "subtitle_article": "By admin | November 26th, 2019 | Gym",
+                            "link_article": "#",
+                            "id": "a",
+                        },
+                        {
+                            "poster_article": "blog1-2x.jpg",
+                            "title_article": "Ultimate cardio workout",
+                            "subtitle_article": "By admin | November 26th, 2019 | Gym",
+                            "link_article": "#",
+                            "id": "b",
+                        },
+                        {
+                            "poster_article": "blog3-2x.jpg",
+                            "title_article": "New juices available now",
+                            "subtitle_article": "By admin | November 26th, 2019 | Gym",
+                            "link_article": "#",
+                            "id": "c",
+                        },
+                    ],
+                    "partners": [
+                        {
+                            "logo_partner": "",
+                            "par_partner": "",
+                            "text_link_partner": "",
+                            "link_partner": "",
+                        },
+                    ]
 
                 }
             }

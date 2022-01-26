@@ -12,8 +12,8 @@
                     <span v-show="el.isNew" class="new ms-1 ps-2 pe-2"> new </span>
                     <i v-show="el.icon"
                         class="fas"
-                        :class="`fa-${el.icon}`" 
-                    ></i>
+                        :class="`fa-${el.icon}`">
+                    </i>
 
                 </a>
 

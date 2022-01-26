@@ -10,33 +10,20 @@
                 </div>
             </div>
             <div class="row justify-content-between m-0 p-0">
-                <div class="article-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img a position-relative">
-                        <img src="../../../assets/img/blog4-2x.jpg" alt="">
+                
+                <div v-for="(el, index) in latarts"
+                    :key="el + index"
+                    class="article-card d-flex flex-column align-items-center p-0">
+                    <div class="container-img position-relative"
+                        :class="el.id">
+                        <img :src="require(`../../../assets/img/${el.poster_article}`)" :alt="el.title_article">
                     </div>
                     <div class="article-info">
-                        <h4 class="text-start">The best protein shake</h4> 
-                        <p class="text-start"> By admin &vert; November 26th, 2019 &vert; Gym </p>
+                        <h4 class="text-start"> {{ el.title_article }} </h4> 
+                        <p class="text-start"> {{ el.subtitle_article }} </p>
                     </div>
                 </div>
-                <div class="article-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img b position-relative">
-                        <img src="../../../assets/img/blog1-2x.jpg" alt="">
-                    </div>
-                    <div class="article-info">
-                        <h4>Ultimate cardio workout</h4>
-                        <p> By admin &vert; November 26th, 2019 &vert; Gym </p>
-                    </div>
-                </div>
-                <div class="article-card d-flex flex-column align-items-center p-0">
-                    <div class="container-img c position-relative">
-                        <img src="../../../assets/img/blog3-2x.jpg" alt="">
-                    </div>
-                    <div class="article-info">
-                        <h4>New juices available now</h4>
-                        <p> By admin &vert; November 26th, 2019 &vert; Gym </p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -44,7 +31,8 @@
 
 <script>
     export default {
-        name: "SectionLatestArticles"
+        name: "SectionLatestArticles",
+        props: [ 'latarts' ],
     }
 </script>
 

@@ -11,7 +11,9 @@
         <SectionServicesCards 
             :serv="ser"
         />
-        <SectionLatestArticles />
+        <SectionLatestArticles 
+            :latarts="larts"
+        />
         <SectionBanner />
         <SectionPartners />
         <SectionOfTheDay />
@@ -46,13 +48,15 @@
             return { 
                 "chal": this.chall, 
                 "trai": this.train, 
-                "ser": this.serv
+                "ser": this.serv,
+                "larts": this.latarts,
             } 
         },
         props: [ 
-            'chall', 
+            'chall',
             'train',
-            'serv', 
+            'serv',
+            'latarts',
         ],
 
     }
